@@ -1,16 +1,27 @@
 {
   "name": "douban-movie",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "douban movie api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["movie", "douban"],
+  "author": "lsong",
+  "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.20.0",
-    "superagent": "^1.8.3"
-  }
+    "xttp": "^1.0.5"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/douban-movie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/song940/douban-movie/issues"
+  },
+  "homepage": "https://github.com/song940/douban-movie#readme"
 }
