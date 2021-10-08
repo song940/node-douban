@@ -9,7 +9,7 @@ $ npm install @song940/douban --save
 
 ### Example
 ```js
-import Douban from '@song940/douban';
+import * as Douban from '@song940/douban';
 
 (async () => {
   const movies = await Douban.Movie.playing('beijing');

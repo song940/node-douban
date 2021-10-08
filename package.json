@@ -1,32 +1,33 @@
 {
   "name": "@song940/douban",
-  "version": "0.0.2",
-  "description": "douban api",
+  "version": "0.0.3",
+  "description": "Douban API in Node.js",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "keywords": [
     "movie",
     "douban"
   ],
-  "author": "lsong",
+  "author": "Lsong",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
     "tiny-network": "^0.0.6"
   },
   "directories": {
-    "example": "example"
+    "example": "example",
+    "lib": "lib"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/song940/douban-movie.git"
+    "url": "git+https://github.com/song940/node-douban.git"
   },
   "bugs": {
-    "url": "https://github.com/song940/douban-movie/issues"
+    "url": "https://github.com/song940/node-douban/issues"
   },
-  "homepage": "https://github.com/song940/douban-movie#readme"
+  "homepage": "https://github.com/song940/node-douban#readme"
 }
