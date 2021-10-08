@@ -1,35 +1,24 @@
-## douban-movie ![NPM version](https://img.shields.io/npm/v/douban-movie.svg?style=flat)
+## douban
 
-douban movie api
+Douban API
 
 ### Installation
 ```bash
-$ npm install douban-movie --save
+$ npm install @song940/douban --save
 ```
 
 ### Example
 ```js
-
-const Douban = require('..');
-
-const douban = new Douban({
-  apikey: '0b2bdeda43b5688921839c8ecb20399b'
-});
+import Douban from '@song940/douban';
 
 (async () => {
+  const movies = await Douban.Movie.playing('beijing');
+  console.log(movies);
 
-  const movie = await douban.movie(26266893);
-  const comments = await douban.movie_comments(26266893);
-  
-  console.log(movie, comments);
-
+  const musics = await Douban.Music.latest();
+  console.log(musics);
 })();
 ```
-
-### API
-
-- douban#movie
-- douban#celebrity
 
 ### Contributing
 - Fork this Repo first

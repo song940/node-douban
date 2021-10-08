@@ -1,14 +1,10 @@
-
-const Douban = require('..');
-
-const douban = new Douban({
-  apikey: '0b2bdeda43b5688921839c8ecb20399b'
-});
+import { Movie, Music } from '../index.js';
 
 (async () => {
+  const movies = await Movie.playing('beijing');
+  console.log(movies);
 
-  const movie = await douban.movie(26266893);
-  const comments = await douban.comments(26266893);
-  console.log(comments);
 
+  const musics = await Music.latest();
+  console.log(musics);
 })();

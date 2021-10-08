@@ -1,16 +1,21 @@
 {
-  "name": "douban-movie",
+  "name": "@song940/douban",
   "version": "0.0.2",
-  "description": "douban movie api",
+  "description": "douban api",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["movie", "douban"],
+  "keywords": [
+    "movie",
+    "douban"
+  ],
   "author": "lsong",
   "license": "MIT",
   "dependencies": {
-    "xttp": "^1.0.5"
+    "cheerio": "^1.0.0-rc.10",
+    "tiny-network": "^0.0.6"
   },
   "directories": {
     "example": "example"
